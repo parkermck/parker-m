@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<title>Parker's Portfolio</title>
+
+<button class="tablink" onclick="openPage('Home', this, 'grey')"id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'grey')">Art</button>
+<button class="tablink" onclick="openPage('Contact', this, 'grey')">Graphic Design</button>
+<button class="tablink" onclick="openPage('About', this, 'grey')">Motion Media</button>
+
+<div id="Home" class="tabcontent">
+
+<img src="img/logo.png" alt="" class="center">
+
+<p class="buns">ABOUT PARKER</p>
+
+<div class="">
+  <p>
+    <span>My name is</span>
+    <span style="font-weight: bold">Parker McKenzie.</span>
+    <span>I'm a senior at Immaculate High School.</span>
+    <span>I like to</span>
+    <span style="font-weight: bold">draw, design, and animate.</span>
+    <span>Here's a website full of some of </span>
+    <span style="font-weight: bold">my stuff.</span>
+
+  </p>
+</div>
+
+<p class="buns">Programs I know how to use are:</p>
+
+  <ul>
+    <li>Adobe Photoshop</li>
+    <li>Adobe Animate</li>
+    <li>Adobe InDesign</li>
+    <li>Adobe Illustrator</li>
+    <li>Adobe After Effects</li>
+    <li>Adobe Premiere Pro</li>
+
+  </ul>
+
+  <p class="buns">More About This Website</p>
+
+  <p>Amount of times I scrapped an idea and restarted</p>
+
+  <ul>
+    <li>6</li>
+  </ul>
+
+  <p>Radiohead Albums listened to in full during the making of this site:</p>
+
+    <ul>
+      <li>A Moon Shaped Pool (52 mins)</li>
+      <li>Kid A (47 mins)</li>
+      <li>In Rainbows (42 mins)</li>
+      <li>OK Computer (53 mins)</li>
+
+    </ul>
+
+    <p class="tee">Approximately 3 hours and 15 mins of Radiohead</p>
+
+    <p>Amount of time spent making the "Graphic Design" section function</p>
+
+    <ul>
+      <li>Almost an Hour</li>
+    </ul>
+
+    <p>Amount of time spent on this</p>
+
+    <ul>
+      <li>Way too long (Approximately 6 hours)</li>
+    </ul>
+
+
+
+
+  <style media="screen">
+    .buns{
+      font-size: 70px;
+      text-align: center;
+    }
+  </style>
+
+<style media="screen">
+
+p{
+  font-size: 40px
+}
+
+</style>
+
+
+
+</div>
+
+<div id="News" class="tabcontent">
+
+<img src="img/art.png" alt="" class="center">
+
+
+  <p class="buns">Some of my art</p>
+<div class="">
+  <img src="img/watermelon.png" alt="" class="center">
+</div>
+<div class="">
+  <img src="img/pink.jpeg" alt=""class="center">
+</div>
+
+
+<div class="">
+  <img src="img/bug.png" alt="" class="center">
+</div>
+
+
+  </div>
+
+
+
+<div id="Contact" class="tabcontent">
+
+<img src="img/graphic.png" alt="" class="center">
+
+
+  <p class="buns">Some of my graphic design stuff</p>
+
+  <!-- Container for the image gallery -->
+  <div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlidess">
+      <div class="numbertexts">1 / 6</div>
+        <img src="img/info.jpeg" style="width:50%" class="center">
+    </div>
+
+    <div class="mySlidess">
+      <div class="numbertexts">2 / 6</div>
+        <img src="img/swc.png" style="width:50%" class="center">
+    </div>
+
+    <div class="mySlidess">
+      <div class="numbertexts">3 / 6</div>
+        <img src="img/gorillaz.jpeg" style="width:50%" class="center">
+    </div>
+
+    <div class="mySlidess">
+      <div class="numbertexts">4 / 6</div>
+        <img src="img/design.jpeg" style="width:50%" class="center">
+    </div>
+
+    <div class="mySlidess">
+      <div class="numbertexts">5 / 6</div>
+        <img src="img/hoop.png" style="width:50%" class="center">
+    </div>
+
+    <div class="mySlidess">
+      <div class="numbertexts">6 / 6</div>
+        <img src="img/christmas.jpeg" style="width:50%" class="center">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id=""></p>
+    </div>
+
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="img/info.jpeg" style="width:100%" onclick="currentSlide(1)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/swc.png" style="width:100%" onclick="currentSlide(2)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/gorillaz.jpeg" style="width:100%" onclick="currentSlide(3)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/design.jpeg" style="width:100%" onclick="currentSlide(4)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/hoop.png" style="width:100%" onclick="currentSlide(5)" alt="">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/christmas.jpeg" style="width:100%" onclick="currentSlide(6)" alt="">
+      </div>
+    </div>
+  </div>
+
+<style media="screen">
+* {
+box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+padding: 16px;
+margin-top: -50px;
+color: white;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertexts {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+</style>
+
+<script type="text/javascript">
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlidess");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+</div>
+
+<div id="About" class="tabcontent">
+
+<img src="img/motion.png" alt="" class="center">
+
+
+  <p class="buns">My animations and other motion media work</p>
+
+  <div class="pasta">
+
+<p>Flying SFX</p>
+<p class="tee">Adobe After Effects</p>
+
+    <iframe width="620" height="515"
+    src="https://www.youtube.com/embed/1nt54xmJK7I?autoplay=1">
+    </iframe>
+
+  </div>
+
+<div class="pasta">
+
+<p>Sock Boy Animation</p>
+<p class="tee">Adobe Animate</p>
+
+  <iframe width="620" height="515"
+  src="https://www.youtube.com/embed/QE8jnuQ1orc?autoplay=1">
+  </iframe>
+</div>
+
+<div class="pasta">
+
+<p>Bouncing Ball Animations</p>
+<p class="tee">Adobe Photoshop, Adobe Premiere Pro</p>
+
+  <iframe width="620" height="515"
+  src="https://www.youtube.com/embed/v-M7YUA42Z8?autoplay=1">
+  </iframe>
+</div>
+
+<style media="screen">
+  .tee{
+    font-size: 22px
+  }
+</style>
+
+<style media="screen">
+  .pasta{
+    text-align: center;
+  }
+</style>
+
+</div>
+
+<style media="screen">
+  h3 {
+    font-family: ;
+    color:
+
+  }
+</style>
+
+<style media="screen">
+
+body, html {
+height: 100%;
+margin: 0;
+font-family: monospace;
+}
+
+
+.tablink {
+background-color: black;
+color: white;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+font-size: 17px;
+width: 25%;
+font-family: monospace;
+}
+
+.tablink:hover {
+background-color: gray;
+}
+
+
+.tabcontent {
+color: black;
+display: none;
+padding: 100px 20px;
+height: 100%;
+}
+
+#Home {background-color: #292929;}
+#News {background-color: #292929;}
+#Contact {background-color: #292929;}
+#About {background-color: #292929;}
+</style>
+
+<script type="text/javascript">
+
+
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+</script>
+<style media="screen">
+
+  p{
+    font-family: monospace;
+    color: white
+
+  }
+  li{
+    font-family: monospace;
+    font-size: 30px;
+    color: white
+  }
+</style>
+
+<style media="screen">
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+}
+</style>
+
+<style media="screen">
+ body{
+   background-color: #191919
+ }
+
+
+
+</style>
+
+</html>
